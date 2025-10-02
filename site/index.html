@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Caramelo</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- logo do site -->
+    <div class="cabecalho">
+        <h1 class="titulo" style="color: white;">MeuCaramelo.com</h1>
+        <img class="racao" src="racao.png">
+
+        <!-- menu  -->
+        <nav class="box">
+            <a class="info" href="#" id="btnAbrirCadastro">Cadastrar</a>
+            <a class="info" href="#" id="btnAbrirLogin">Entrar</a>
+            <a class="info" href="#secao2">Adotar</a>   <!-- a classe de box esta invertida com de info, no css -->
+        </nav>
+
+        <!-- iframe do menu cadastrar e menu entrar-->
+        <div id="iframeContainer">
+            <button id="closeBtn">Fechar</button>
+        </div>
+
+        <script>
+            const iframeContainer = document.getElementById('iframeContainer');
+            const closeBtn = document.getElementById('closeBtn');
+
+            function abrirIframe(arquivo) {
+                // Remove iframe existente
+                const iframeExistente = iframeContainer.querySelector('iframe');
+                if (iframeExistente) {
+                    iframeContainer.removeChild(iframeExistente);
+                }
+                // Cria novo iframe
+                const iframe = document.createElement('iframe');
+                iframe.src = arquivo;
+                iframe.style.width = '100%';
+                iframe.style.height = '400px';
+                iframe.style.border = 'none';
+                iframeContainer.appendChild(iframe);
+                iframeContainer.style.display = 'block';
+            }
+
+            document.getElementById('btnAbrirLogin').addEventListener('click', () => {
+                abrirIframe('entrar.html');
+            });
+
+            document.getElementById('btnAbrirCadastro').addEventListener('click', () => {
+                abrirIframe('cadastro.html');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                iframeContainer.style.display = 'none';
+                const iframe = iframeContainer.querySelector('iframe');
+                if (iframe) {
+                    iframeContainer.removeChild(iframe);
+                }
+            });
+        </script>
+    </div>
+
+    <!-- imagens -->
+    <img class="img1" style="margin-left: 23%;" src="familia.webp">
+    <img class="img2" style="margin-left: 10%;" src="felizes.jfif">
+
+    <!-- texto das imagens-->
+    <div class="texto-box">
+        <a class="texto" href="#secao3" style="margin-left: 29%;">Feedbacks</a>
+        <a class="texto" href="#secao1" style="margin-left: 22%;">Quem Somos</a>
+    </div>
+
+    <!-- informações de "quem somos" -->
+    <p id="secao1" style="color: #b87c40;">.</p><br><br> <!-- para centralizar a linkagem da sessao -->
+    <div class="box_nos">
+        <h1 class="nos">Um Pouquinho Sobre Nós</h1>
+        <p class="texto_nos">Somos uma empresa que tem como objetivo ajudar animais abandonados
+            a encontrarem um novo lar.
+            Acreditamos que todos os animais merecem amor e cuidado, e estamos comprometidos em fazer a diferença na
+            vida desses animais.
+            Trabalhamos com uma equipe dedicada de voluntários que se esforçam para resgatar, cuidar e encontrar lares
+            amorosos para os animais que ajudamos.
+            Se você está procurando um novo amigo peludo ou quer ajudar a apoiar nossa causa, entre em contato conosco
+            hoje mesmo!</p>
+    </div><br><br>
+
+    <!-- informaçãoes de "quero adotar" -->
+    <p id="secao2" style="color: #b87c40;">.</p><br> <!-- para centralizar a linkagem da sessao -->
+    <h1 class="adotar">Quero Adotar</h1>
+    <div class="box_adotar">
+        <div class="cachorro1">
+            <img class="animais" src="cachorro.jpg">
+            <p class="nomeAnimais">Fred</p>
+        </div>
+
+        <div class="cahorro2">
+            <img class="animais" src="branquinha.jpg">
+            <p class="nomeAnimais">Elsa</p>
+        </div>
+
+        <div class="cahorro3">
+            <img class="animais" src="rajadinha.jpg">
+            <p class="nomeAnimais">Lady</p>
+        </div>
+    </div><br><br>
+
+    <!-- informações de "feedbacks" -->
+    <p id="secao3" style="color: #b87c40;">.</p><br> <!-- para centralizar a linkagem da sessao -->
+    <h1 class="comentarios">Feedbacks</h1>
+    <div class="box_comentarios">
+        <img class="star1" src="estrelas.png">
+        <div class="coment1">
+            <p><strong>Silvio</strong> | 10/11/2024</p>
+            <p style="padding-left: 70px;">Amei a minha nova companheira!</p>
+        </div>
+
+        <img class="star2" src="estrelasC.png">
+        <div class="coment2">
+            <P><strong>Amanda</strong> | 06/04/2025</P>
+            <p style="padding-left: 70px;">Os Goldens gostam muito de bolinhas.</p>
+        </div>
+
+        <img class="star3" src="estrelasC.png">
+        <div class="coment3">
+            <P><strong>Jonas</strong> | 29/08/2025</P>
+            <p style="padding-left: 70px;">Os salsichas são tão fofos.</p>
+        </div>
+    </div><br><br><br><br><br><br><br><br>
+
+    <!-- Informações do "rodapé" -->
+    <footer class="rodape">
+        <h2 class="contato">Meios de Contato e Informações</h2>
+        <div class="informacoes">
+            <p>Telefone: (11) 98765-4321</p>
+            <p>Email: meucaramelo@gmail.com</p>
+            <p>Endereço: Rua dos Animais, 123 - São Paulo, SP</p>
+            <p>Horário de funcionamento: Das 9h as 17h</p>
+        </div>
+
+        <h2 class="socias">Redes Sociais</h2>
+        <img class="Redes" src="whatsapp.png" hspace="4'px" style="margin-left: 870px;">
+        <img class="Redes" src="instagram.png" hspace="4px">
+        <img class="Redes" src="facebook.png" hspace="4px">
+        <img class="Redes" src="twitter.png" hspace="4px"><br><br><br><br>
+
+        <p style="color: white; text-align: center;">© 2025 MeuCaramelo.com - Todos os direitos reservados.</p>
+        <p class="dev">Desenvolvido por Cauê Alves</p>
+
+    </footer>
+
+</body>
+
+</html>
