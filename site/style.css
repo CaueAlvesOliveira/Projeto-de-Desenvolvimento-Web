@@ -1,0 +1,545 @@
+body {
+  background-color: #f0a75f;
+  top: 10px;
+  bottom: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+/* logo do site e titulo */
+.cabecalho {
+  background-color: #b87c40;
+  padding-bottom: 4%;
+  width: 100%;
+  display: inline-block;
+}
+
+.titulo {
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.racao {
+  display: flex;
+  margin-top: -2%;
+  margin-left: 10%;
+  height: 1%;
+  width: 13%;
+}
+
+.racao:hover {
+  transform: scale(1);
+}
+
+/* menu de informações */
+
+.info {
+  display: inline;
+  width: 2.5rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10%;
+  padding: 2.5%;
+  margin-right: 4%;
+  background-color: #f0a75f;
+  color: white;
+  text-decoration: none;
+}
+
+.box {
+  display: flexbox;
+  margin-left: 47.6%;
+  margin-top: -3%;
+  font-size: 130%;
+  color: white;
+}
+
+/* imagens e textos linkados */
+.img1 {
+  display: inline;
+  height: 10%;
+  width: 20%;
+  border-radius: 10%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  transform: translate(-50%, -50%);
+  transition: all 2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.img1:hover {
+  transform: scale(1.2);
+}
+
+.img2 {
+  display: inline;
+  height: 10%;
+  width: 20%;
+  border-radius: 10%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  transform: translate(-50%, -50%);
+  transition: all 2s ease-in-out;
+  overflow: hidden;
+  transform: scale(1.1);
+}
+
+.img2:hover {
+  transform: scale(1.2);
+}
+
+.texto-box {
+  display: flex;
+  justify-content: center;
+}
+
+.texto {
+  display: inline;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 0% 10% 0% 8%;
+}
+
+/* informações sobre a "empresa" */
+.box_nos {
+  padding-bottom: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-left: 13%;
+  width: 1040px;
+  background-color: #b87c40;
+}
+
+.nos {
+  padding: 10px 0px 0px 30px;
+  font-size: 35px;
+  color: white;
+}
+
+.texto_nos {
+  padding: 0px 30px 10px 30px;
+  font-size: 19px;
+  color: white;
+  text-align: justify;
+}
+
+/* informações sobre o "adotar" { */
+.adotar {
+  font-size: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.box_adotar {
+  display: inline-flex;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 12%;
+  width: 1040px;
+  background-color: #b87c40;
+}
+
+.animais {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.nomeAnimais {
+  display: inline;
+  margin: 150px;
+  font-size: 28px;
+  color: white;
+}
+
+.cachorro1,
+.cachorro2,
+.cachorro3 {
+  display: inline;
+}
+
+/* Informações sobre o assunto "feedbacks" */
+.comentarios {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 35px;
+  color: white;
+}
+
+.star1 {
+  display: inline-flex;
+  height: 200px;
+  margin-top: -60px;
+  margin-bottom: -90px;
+  margin-left: 230px;
+}
+
+.coment1 {
+  display: inline-flex;
+  font-size: 25px;
+  color: white;
+}
+
+.star2 {
+  display: inline-flex;
+  height: 200px;
+  margin-top: -60px;
+  margin-bottom: -90px;
+  margin-left: 230px;
+}
+
+.coment2 {
+  display: inline-flex;
+  font-size: 25px;
+  color: white;
+}
+
+.star3 {
+  display: inline-flex;
+  height: 200px;
+  margin-top: -60px;
+  margin-bottom: -90px;
+  margin-left: 230px;
+}
+
+.coment3 {
+  display: inline-flex;
+  font-size: 25px;
+  color: white;
+}
+
+.box_comentarios {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.deixado {
+  margin-left: 4rem;
+}
+
+/* Informações sobre o "rodapé" */
+.rodape {
+  background-color: #b87c40;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+.contato {
+  font-size: 27px;
+  color: white;
+  display: flex;
+  padding-left: 180px;
+  padding-top: 80px;
+}
+
+.informacoes {
+  display: inline-block;
+  padding-left: 180px;
+  padding-top: 5px;
+  color: white;
+  font-size: 20px;
+  margin-top: -22px;
+}
+
+.socias {
+  font-size: 27px;
+  display: flex;
+  margin-left: 920px;
+  color: white;
+  margin-top: -150px;
+  margin-right: 350px;
+}
+
+.box_redes {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 880px;
+}
+
+.Redes {
+  display: inline-flex;
+  width: 37px;
+  height: 37px;
+}
+
+.desenvolvedor {
+  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+}
+
+.dev {
+  display: block;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+/* sobre a pagina de cadastro e de entrar */
+
+.login-box {
+  width: 50%;
+  margin: 3% auto;
+  padding: 10%;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.login-box h2 {
+  margin-bottom: 20px;
+}
+.login-box label {
+  display: block;
+  margin-top: 10px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+}
+.password-wrapper {
+  position: relative;
+}
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+}
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.links {
+  margin-top: 12px;
+  font-size: 14px;
+}
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.button-row button {
+  padding: 8px 22px;
+  border: none;
+  border-radius: 3px;
+  background: #3ec784;
+  color: #fff;
+  cursor: pointer;
+}
+.button-row button[type="button"] {
+  background: #e0e0e0;
+  color: #444;
+}
+
+#iframeContainer {
+  margin-top: 3%;
+  width: 50%;
+  height: 42rem;
+  padding-top: 4%;
+  display: none; /* Inicialmente oculto */
+  position: relative;
+}
+
+#closeBtn {
+  position: relative;
+  margin-left: 118%;
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 22px;
+  margin-top: 17px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+iframe {
+  display: flex;
+  margin-left: 50%;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 520px) {
+  body {
+    width: 25.5rem;
+  }
+  .titulo {
+    font-size: 0.8rem;
+  }
+
+  .info {
+    font-size: 0.8rem;
+  }
+
+  .box {
+    width: 12rem;
+    margin-left: 11.5rem;
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+
+  .texto {
+    font-size: 0.8rem;
+    padding: 0rem 1.8rem 0rem 3rem;
+  }
+
+  .img1,
+  .img2 {
+    width: 23%;
+    margin-right: -0.1rem;
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+
+  .box_nos {
+    width: 20rem;
+    margin-left: 2.2rem;
+    margin-top: -1rem;
+  }
+
+  .nos {
+    display: flex;
+    font-size: 1.1rem;
+  }
+
+  .texto_nos {
+    font-size: 0.8rem;
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+
+  .adotar {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+  }
+
+  .box_adotar {
+    width: 18rem;
+    height: 10rem;
+    margin-left: 2.2rem;
+  }
+
+  .animais {
+    height: 6rem;
+    width: 5rem;
+    margin-left: 0.5rem;
+  }
+
+  .nomeAnimais {
+    font-size: 0.8rem;
+    margin: 2rem;
+  }
+
+  .cachorro1,
+  .cachorro2,
+  .cachorro3 {
+    display: inline;
+    height: 1rem;
+    padding: 0rem -1rem 0rem -10rem;
+    width: 6rem;
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+
+  .comentarios {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+  }
+
+  .box_comentarios {
+    width: 25.7rem;
+  }
+
+  .coment1,
+  .coment2,
+  .coment3 {
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .deixado {
+    margin-left: 1rem;
+  }
+
+  .star1,
+  .star2,
+  .star3 {
+    height: 5rem;
+    margin-left: 0.2rem;
+    margin-top: -1.4rem;
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+
+  .rodape {
+    width: 100%;
+  }
+
+  .contato {
+    font-size: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .informacoes {
+    font-size: 0.5rem;
+    padding-left: 3rem;
+    padding-top: 0.2rem;
+    margin-top: -0.5rem;
+  }
+
+  .socias {
+    font-size: 0.5rem;
+    margin-left: 18rem;
+    margin-top: -4rem;
+    margin-right: 2rem;
+  }
+
+  .box_redes {
+    display: flex;
+    margin-top: 0.3rem;
+    margin-left: 17.3rem;
+  }
+
+  .Redes {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .desenvolvedor {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .dev {
+    font-size: 0.5rem;
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+}
