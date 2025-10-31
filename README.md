@@ -16,6 +16,6 @@ https://cauealvesoliveira.github.io/Projeto-academico-desenvolvimento-web/site
  * Serviços externos: GitHub
 
 ---
-Ainda está em desenvolvimento, colocado no git, somente para verificar responsividade.
+Ainda está em desenvolvimento, colocado no git, somente para verificar responsividade. Este projeto é o terceiro contato com HTML e CSS e o primeiro contato com JavaScript. A partir deste projeto, já é estruturado uma maior responsividade, porem, ainda não desenvolvida 100%. 
 
 
