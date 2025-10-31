@@ -7,7 +7,7 @@ O repositório contém:
 1. Desenvolvimento web de uma plataforma de adoção de cachorros
 
 O site foi desenvolvido em HTML e CSS, no VScode e hospedado no github em:                                                                          
-https://cauealvesoliveira.github.io/Projeto-academico-desenvolvimento-Web/site
+https://cauealvesoliveira.github.io/Projeto-academico-desenvolvimento-web/site
 
 ---
 
